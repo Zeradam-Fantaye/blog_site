@@ -1,0 +1,44 @@
+
+############### RESTful Routing #################
+
+=> REST(Representational State Transfer):
+        
+        => It is a mapping between HTTP routes and CRUD(CREATE READ UPDATE DESTROY)
+        
+        => It is a way of mapping our HTTP routes with CRUD
+        
+        => It is a pattern for defining our routes
+        
+        => It is a pattern of routes that we can follow
+        
+        => It is conventional way of doing things, and also it is reliable
+        
+        => There are 7 basic RESTful routes:
+        
+
+            ====================================================================
+            Name             Path            HTTP Verb           Purpose
+            ====================================================================
+             Index           /dogs             GET          List all dogs
+            --------------------------------------------------------------------
+>>CREATE<<   New             /dogs/new         GET          Show new dog form
+            --------------------------------------------------------------------
+>>CREATE<<   Create          /dogs             POST         Create a new dog, 
+                                                            then redirect 
+                                                            somewhere
+            --------------------------------------------------------------------
+>>READ<<     Show            /dogs/:id         GET          Show info about 
+                                                            one specific dog
+            --------------------------------------------------------------------
+>>UPDATE<<   Edit            /dogs/:id/edit    GET          Show edit form 
+                                                            for one dog
+            --------------------------------------------------------------------
+>>UPDATE<<   Update          /dogs/:id         PUT          Update a particular
+                                                            dog, then redirect 
+                                                            somewhere
+            --------------------------------------------------------------------
+>>DESTROY<<  Destroy         /dogs/:id         DELETE       Delete a particular
+                                                            dog, then redirect 
+                                                            somewhere
+            --------------------------------------------------------------------
+
