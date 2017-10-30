@@ -1,4 +1,4 @@
-<% include /home/ubuntu/workspace/BlogApp/views/partials/header.ejs %>
+<% include partials/header.ejs %>
 
     <div class="ui main text container segment">
         <div class="ui huge header"> <%= blog.title %></div>
@@ -9,11 +9,11 @@
             
                 <div class="description">
                     <p> <%- blog.body %> </p> 
-                </div>
+                </div> <br>
                 
                 <div class="content">
                     <span> <%= blog.created.toDateString() %>  </span>
-                </div>
+                </div> <br> <br>
                 
                  <!--Edit button-->
                 <a  class="ui orange big basic button" href="/blogs/<%=blog._id %>/edit"> Edit </a>
@@ -28,5 +28,5 @@
         </div>
         
     </div>
-
-<% include /home/ubuntu/workspace/BlogApp/views/partials/footer.ejs %>
+    
+<% include partials/footer.ejs %>

@@ -5,3 +5,8 @@ i.icon { /* i that has a class of icon  */
 .text.container.segment{
     margin-top: 7em;
 }
+
+body{
+    background-color: #fff3d6;
+    font-family: 'Maven Pro', sans-serif;
+}

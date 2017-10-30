@@ -1,10 +1,10 @@
 
-<% include /home/ubuntu/workspace/BlogApp/views/partials/header.ejs %>
+<% include partials/header.ejs %>
 
 
     <div class="ui main text container">
         
-        <div class="ui huge header">RESTful blog app</div>
+        <div class="ui huge header">Blog List</div>
         
         <div class="ui top attached segment">
             
@@ -34,7 +34,7 @@
                                 </div>
                                 
                                 <div class="extra">
-                                    <a class="ui floated basic violet button" href="/blogs/<%= blogs[i]._id  %>">
+                                    <a class="ui floated basic brown button" href="/blogs/<%= blogs[i]._id  %>">
                                         Read more
                                         <i class="right chevron icon"></i>
                                     </a>
@@ -51,5 +51,4 @@
         
     </div>
 
-
-<% include /home/ubuntu/workspace/BlogApp/views/partials/footer.ejs %>
+<% include partials/footer.ejs %>
