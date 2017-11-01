@@ -8,7 +8,10 @@ var express             = require("express"),           //importing express
 
 // ============== MONGOOSE/MODEL CONFIG ===============
 // Connecting to a database 
-mongoose.connect("mongodb://localhost/BlogApp_DB");
+//mongoose.connect("mongodb://zeru:zeru@ds143245.mlab.com:43245/blogsite");
+
+var url = process.env.DATABASEURLBLOG || "mongodb://localhost/BlogApp_DB"; 
+mongoose.connect(url);
 
 // Creating a schema: A plan on what our blog looks like  --
 var blogSchema = new mongoose.Schema({
